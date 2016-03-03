@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/areaReproductor"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#CCCCCC"
+	android:orientation="vertical" >
+   	<LinearLayout
+        android:id="@+id/areaCargando"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        <ProgressBar android:id="@+id/loading_spinner"
+	        style="?android:progressBarStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center" />
+        <TextView
+               android:id="@+id/textoCargando"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:paddingLeft="5dp"
+               android:textStyle="bold"
+               android:gravity="center_vertical"
+               android:text="Cargando, por favor espere..."
+               android:textSize="15dp" />
+    </LinearLayout>
+   	<LinearLayout
+        android:id="@+id/reproductor"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imagenPlay"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="pausarReproduccion"
+            android:src="@drawable/play" />
+        <View
+		    android:layout_width="1px"
+		    android:layout_height="fill_parent"
+		    android:background="#888888"/>
+        <TextView
+            android:id="@+id/segundosReproducidos"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="0:00" />
+		<LinearLayout
+	        android:id="@+id/areaProgreso"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <SeekBar
+	            android:id="@+id/progreso"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/segundosFaltantes"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="-0:00" />
+
+	</LinearLayout>
+</LinearLayout>

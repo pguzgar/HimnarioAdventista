@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.daro.himnario"
+    android:versionCode="402"
+    android:versionName="1.4.2" 
+    android:installLocation="auto"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/HimnarioTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.himno.HimnoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_himno"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.daro.himnario.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AcercaActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.himno.HimnoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.daro.himnario.HimnoActivity" />
+        </activity>
+        <activity
+            android:name=".AgradecimientosActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.himno.HimnoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.daro.himnario.HimnoActivity" />
+        </activity>
+        <activity
+            android:name=".BuscadorActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.himno.HimnoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.daro.himnario.HimnoActivity" />
+        </activity>
+        <activity
+            android:name=".DescargaMainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.himno.HimnoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.daro.himnario.HimnoActivity" />
+        </activity>
+        <activity
+            android:name=".DescargaListaHimnarioActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".DescargaMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.daro.himnario.DescargaMainActivity" />
+        </activity>
+        <activity
+            android:name=".FavoritosActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activity.himno.FavoritosActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mx.daro.himnario.HimnoActivity" />
+        </activity>
+        <service android:name="mx.daro.himnario.service.ReproductorService" />
+        <service android:name="mx.daro.himnario.service.DescargaService" />
+    </application>
+
+</manifest>

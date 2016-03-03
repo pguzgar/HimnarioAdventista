@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/texto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".HimnoActivity" >
+
+	<ScrollView 
+	    android:id="@+id/areaHimno"
+	    android:layout_height="500dp"
+        android:layout_width="match_parent">
+        
+	    <LinearLayout
+	       	android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/tituloHimno"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:paddingRight="15dp"
+	            android:paddingLeft="15dp"
+	            android:text="Cargando..."
+	            android:textSize="20dp"
+	            android:textStyle="bold" />
+	
+	        <EditText
+	            android:id="@+id/textoHimno"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#00000000"
+	            android:clickable="false"
+	            android:cursorVisible="false"
+	            android:ems="10"
+	            android:focusable="false"
+	            android:focusableInTouchMode="false"
+	            android:inputType="textMultiLine"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:paddingRight="20dp"
+	            android:paddingLeft="20dp"
+	            android:text="..."
+	            android:textSize="20dp" >
+	
+	            <requestFocus />
+	        </EditText>
+	    </LinearLayout>
+	</ScrollView>
+
+	<fragment
+	    class="mx.daro.himnario.fragment.ReproductorFragment"
+	    android:id="@+id/FrgReproductor"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+	
+	<fragment
+	    class="mx.daro.himnario.fragment.MenuDescargaFragment"
+	    android:id="@+id/FrgMenuDescarga"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+		
+    <LinearLayout
+        android:baselineAligned="false"
+        android:id="@+id/areaBotones"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F0F0F0"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="41"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/botonTocarPista"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Pista"
+                android:clickable="true"
+            	android:onClick="clickTocarPista"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="18"
+            android:clickable="true"
+            android:onClick="showPantallaBuscador"
+            android:orientation="vertical" >
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="15"/>
+            <ImageView
+                android:id="@+id/imagenBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:src="@drawable/buscarazul" />
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="15"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="41"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/botonTocarCantado"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+            	android:onClick="clickTocarCancion"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Canci\u00F3n"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

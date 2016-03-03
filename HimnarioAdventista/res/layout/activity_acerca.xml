@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+    	android:background="#F0F0F0"
+	    android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".OpcionesActivity" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingTop="20dp"
+	        android:text="Himnario Adventista"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textStyle="bold" />
+	    <TextView
+	        android:id="@+id/versionAcerca"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingBottom="20dp"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Powered by"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:scaleType="fitCenter"
+	            android:src="@drawable/logodaro" />
+	
+	    </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingTop="40dp"
+	        android:text="Desarrollado por\nPedro Guzm\u00E1n Garc\u00EDa\npedro.guzman@daro.mx\n\n\nLos cantos y pistas pertenecen a sus autores." />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        android:paddingTop="20dp" >
+	
+	        <Button
+	            android:id="@+id/button1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="atras"
+	            android:text="Cerrar" />
+	
+	    </LinearLayout>
+	
+	</LinearLayout>
+</ScrollView>

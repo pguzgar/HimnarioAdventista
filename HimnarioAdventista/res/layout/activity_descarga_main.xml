@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DescargaMainActivity" >
+
+    <TextView
+        android:id="@+id/infoTarjeta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/textoGuardarDescargasEn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar descargas en:" />
+
+    <RadioGroup
+        android:paddingBottom="15dp"
+        android:id="@+id/grupoPaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </RadioGroup>
+
+    <TextView
+        android:padding="15dp"
+        android:id="@+id/textoSeleccionaHimnario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Selecciona el himnario:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/listaHimnariosDescarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

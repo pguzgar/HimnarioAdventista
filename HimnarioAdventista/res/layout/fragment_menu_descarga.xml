@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/areaMenuDescarga"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+		<LinearLayout
+	        android:id="@+id/wraperGlobo"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:orientation="vertical" >
+		    <LinearLayout
+		        android:id="@+id/areaMenuDescargaGlobo"
+				android:layout_width="wrap_content"
+				android:layout_height="0dp"
+				android:layout_weight="9"
+				android:background="@drawable/rounded0"
+				android:orientation="horizontal" >
+			    <TextView
+			        android:id="@+id/opcionTocar"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:clickable="true"
+			        android:onClick="clickTocar"
+			        android:textSize="18dp"
+			        android:singleLine="true"
+			        android:gravity="center_vertical"
+			        android:text="   Tocar" />
+			
+			    <TextView
+			        android:id="@+id/separador"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:textSize="18dp"
+			        android:gravity="center_vertical"
+			        android:singleLine="true"
+			        android:text="   |   " />
+			
+			    <TextView
+			        android:id="@+id/opcionDescargarYTocar"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:clickable="true"
+			        android:onClick="clickDescargar"
+			        android:textSize="18dp"
+			        android:singleLine="true"
+			        android:gravity="center_vertical"
+			        android:text="Descargar   " />
+		   	</LinearLayout>
+		   	<LinearLayout
+		        android:id="@+id/areaFlecha"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:orientation="horizontal" >
+			    <LinearLayout
+			        android:orientation="horizontal"
+			        android:id="@+id/flecha"
+			        android:layout_width="20dp"
+			        android:layout_height="fill_parent"
+			        android:background="@drawable/triangulo0" />
+		    </LinearLayout>
+		</LinearLayout>
+</LinearLayout>

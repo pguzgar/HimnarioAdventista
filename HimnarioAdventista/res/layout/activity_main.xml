@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back2"
+    tools:context=".MainActivity" >
+	
+    <LinearLayout
+	    android:layout_width="match_parent" 
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" >
+        </LinearLayout>
+        
+	    <ImageView
+	        android:id="@+id/logoIASD"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="8"
+	        android:contentDescription="@string/desc_generica"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/iasd_logocopy" />
+
+	    <LinearLayout
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent" >
+	    </LinearLayout>
+	    
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent" 
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical">
+	    
+	    <LinearLayout
+		    android:layout_width="match_parent" 
+		    android:layout_height="0dp"
+		    android:layout_weight="2"
+		    android:orientation="horizontal">
+		    	<LinearLayout
+			        android:layout_weight="7"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent" >
+			    </LinearLayout>
+
+			    <ImageView
+			        android:id="@+id/link2009"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="40"
+			        android:clickable="true"
+			        android:contentDescription="@string/desc_generica"
+			        android:scaleType="fitCenter"
+			        android:src="@drawable/hnuevo"
+			        android:onClick="versionSeleccionada" 
+			     />
+			    
+				<LinearLayout
+			        android:layout_weight="6"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent" >
+			    </LinearLayout>
+
+	            <ImageView
+	                android:id="@+id/link1962"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="40"
+	                android:clickable="true"
+	                android:contentDescription="@string/desc_generica"
+	                android:scaleType="fitCenter"
+	                android:src="@drawable/hanterior"
+	                android:onClick="versionSeleccionada" 
+	            />
+
+			    <LinearLayout
+			        android:layout_weight="7"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent" >
+			    </LinearLayout>
+	    </LinearLayout>
+        
+	    <LinearLayout
+		    android:layout_width="match_parent" 
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:orientation="vertical">
+			    <LinearLayout
+			        android:layout_weight="50"
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp" >
+			    </LinearLayout>
+
+			    <ImageView
+			        android:id="@+id/logoDaro"
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="30"
+			        android:contentDescription="@string/desc_generica"
+			        android:scaleType="fitCenter"
+			        android:src="@drawable/logodaro" />
+
+		   		 <LinearLayout
+			        android:layout_weight="20"
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp" >
+			    </LinearLayout>
+	    </LinearLayout>
+	    
+    </LinearLayout>
+</LinearLayout>
